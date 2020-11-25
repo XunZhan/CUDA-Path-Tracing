@@ -15,7 +15,7 @@ All the output images are fixed to 512 x 512 pixels and the rendering scene has 
 First, fix the max depth for each ray and calculate execution time in different SPP. Then fix the SPP and change the max depth. The experiments are done on code with  and without CUDA acceleration.  
 <img src="img/fix_spp.png" height="350"  />  
 **SPP = 8**  
-<img src="img/fix_depth.png" height="350"  />  
+<img src="img/fix_depth.png" height="300"  />  
 **Depth = 3**  
 When the SPP remains unchanged, path tracing accelerated by CUDA always has a shorter
 execution time. As the maximum depth increases, the growth rate of the two methods both tend to slow down. This is because after using Russian Roulette, the probability to perform more in-depth calculations decreases. The number of executions that can be performed also decreases significantly.  
