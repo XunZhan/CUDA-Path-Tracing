@@ -30,3 +30,25 @@
 *.exe
 *.out
 *.app
+
+### CUDA ###
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+
+# Clion
+cmake-build-debug/
+CMakeFiles/
+.idea/
+*.cmake
+CMakeCache.txt
+Makefile
+
+# Output
+*.ppm
+
+# Mac
+.DS_Store
